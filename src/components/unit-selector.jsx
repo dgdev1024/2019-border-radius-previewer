@@ -11,6 +11,11 @@ const UnitSelector = ({ onChange, ...rest }) => {
     <select className="brp-unit-selector" onChange={onChange} {...rest}>
       <option value="px">Pixels</option>
       <option value="%">Percent</option>
+      <option value="cm">Centimeters</option>
+      <option value="mm">Millimeters</option>
+      <option value="in">Inches</option>
+      <option value="pt">Points</option>
+      <option value="pc">Picas</option>
     </select>
   );
 };

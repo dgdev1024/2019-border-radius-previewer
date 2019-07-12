@@ -32,65 +32,127 @@ const BorderRadiusControl = () => {
       <legend>Border Radius Control</legend>
       <div className="brp-fieldset-flex-container">
         <div className="brp-control-element">
-          <label>Top Left: </label>
+          <label>Top Left X: </label>
           <input
             type="number"
-            value={ctx.topLeft.mag}
+            value={ctx.topLeftX.mag}
             onChange={e =>
-              ctx.setTopLeft({ ...ctx.topLeft, mag: e.target.value })
+              ctx.setTopLeftX({ ...ctx.topLeftX, mag: e.target.value })
             }
           />
           <UnitSelector
             onChange={e =>
-              ctx.setTopLeft({ ...ctx.topLeft, unit: e.target.value })
+              ctx.setTopLeftX({ ...ctx.topLeftX, unit: e.target.value })
             }
           />
         </div>
         <div className="brp-control-element">
-          <label>Top Right: </label>
+          <label>Top Right X: </label>
           <input
             type="number"
-            value={ctx.topRight.mag}
+            value={ctx.topRightX.mag}
             onChange={e =>
-              ctx.setTopRight({ ...ctx.topRight, mag: e.target.value })
+              ctx.setTopRightX({ ...ctx.topRightX, mag: e.target.value })
             }
           />
           <UnitSelector
             onChange={e =>
-              ctx.setTopRight({ ...ctx.topRight, unit: e.target.value })
+              ctx.setTopRightX({ ...ctx.topRightX, unit: e.target.value })
             }
           />
         </div>
         <div className="brp-control-element">
-          <label>Bottom Right: </label>
+          <label>Bottom Right X: </label>
           <input
             type="number"
-            value={ctx.bottomRight.mag}
+            value={ctx.bottomRightX.mag}
             onChange={e =>
-              ctx.setBottomRight({ ...ctx.bottomRight, mag: e.target.value })
+              ctx.setBottomRightX({ ...ctx.bottomRightX, mag: e.target.value })
             }
           />
           <UnitSelector
             onChange={e =>
-              ctx.setBottomRight({ ...ctx.bottomRight, unit: e.target.value })
+              ctx.setBottomRightX({ ...ctx.bottomRightX, unit: e.target.value })
             }
           />
         </div>
         <div className="brp-control-element">
-          <label>Bottom Left: </label>
+          <label>Bottom Left X: </label>
           <input
             type="number"
-            value={ctx.bottomLeft.mag}
+            value={ctx.bottomLeftX.mag}
             onChange={e =>
-              ctx.setBottomLeft({ ...ctx.bottomLeft, mag: e.target.value })
+              ctx.setBottomLeftX({ ...ctx.bottomLeftX, mag: e.target.value })
             }
           />
           <UnitSelector
             onChange={e =>
-              ctx.setBottomLeft({ ...ctx.bottomLeft, unit: e.target.value })
+              ctx.setBottomLeftX({ ...ctx.bottomLeftX, unit: e.target.value })
             }
           />
         </div>
+
+        <div className="brp-control-element">
+          <label>Top Left Y: </label>
+          <input
+            type="number"
+            value={ctx.topLeftY.mag}
+            onChange={e =>
+              ctx.setTopLeftY({ ...ctx.topLeftY, mag: e.target.value })
+            }
+          />
+          <UnitSelector
+            onChange={e =>
+              ctx.setTopLeftY({ ...ctx.topLeftY, unit: e.target.value })
+            }
+          />
+        </div>
+        <div className="brp-control-element">
+          <label>Top Right Y: </label>
+          <input
+            type="number"
+            value={ctx.topRightY.mag}
+            onChange={e =>
+              ctx.setTopRightY({ ...ctx.topRightY, mag: e.target.value })
+            }
+          />
+          <UnitSelector
+            onChange={e =>
+              ctx.setTopRightY({ ...ctx.topRightY, unit: e.target.value })
+            }
+          />
+        </div>
+        <div className="brp-control-element">
+          <label>Bottom Right Y: </label>
+          <input
+            type="number"
+            value={ctx.bottomRightY.mag}
+            onChange={e =>
+              ctx.setBottomRightY({ ...ctx.bottomRightY, mag: e.target.value })
+            }
+          />
+          <UnitSelector
+            onChange={e =>
+              ctx.setBottomRightY({ ...ctx.bottomRightY, unit: e.target.value })
+            }
+          />
+        </div>
+        <div className="brp-control-element">
+          <label>Bottom Left Y: </label>
+          <input
+            type="number"
+            value={ctx.bottomLeftY.mag}
+            onChange={e =>
+              ctx.setBottomLeftY({ ...ctx.bottomLeftY, mag: e.target.value })
+            }
+          />
+          <UnitSelector
+            onChange={e =>
+              ctx.setBottomLeftY({ ...ctx.bottomLeftY, unit: e.target.value })
+            }
+          />
+        </div>
+
         <div className="brp-control-element" id="css-preview">
           <fieldset onClick={copyCSS} title="Click to Copy CSS Code">
             <legend>CSS Code - Click to Copy</legend>
