@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+html,
+body {
+  background-color: #ededed;
+}
+
+header {
+  width: 95%;
+  margin: 0px auto;
+  text-align: center;
+
+  h1 {
+    padding: 8px 0px;
+    font-size: 1.6em;
+  }
+
+  p {
+    padding-bottom: 8px;
+    font-style: italic;
+  }
+}
+
+footer {
+  width: 95%;
+  margin: 0px auto;
+
+  p {
+    padding: 8px 0px 16px;
+    text-align: center;
+    font-style: italic;
+
+    a {
+      color: #555555;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #ededed;
+
+  @media (min-width: 800px) {
+    flex-direction: row;
+    padding: 16px;
+  }
+
+  legend {
+    font-size: 0.9em;
+  }
+
+  .brp-fieldset-flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .brp-control {
+    width: 95%;
+    margin: 0px auto;
+
+    @media (min-width: 600px) {
+      width: 85%;
+    }
+
+    @media (min-width: 800px) {
+      flex: 1;
+      margin: 8px;
+    }
+
+    .brp-control-element {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid black;
+      }
+
+      &#css-preview {
+        display: block;
+        width: 100%;
+
+        fieldset {
+          background-color: white;
+          p {
+            padding: 8px;
+            font-family: 'Roboto Mono', monospace;
+            color: darkred;
+          }
+        }
+      }
+
+      label {
+        flex: 1;
+      }
+    }
+  }
+
+  .brp-view {
+    flex: 1;
+    width: 95%;
+    margin: 8px auto;
+
+    .brp-view-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
+      .brp-view-box {
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+
+        @media (min-width: 800px) {
+          width: 320px;
+          height: 320px;
+          margin: 8px;
+        }
+      }
+    }
+  }
+}
